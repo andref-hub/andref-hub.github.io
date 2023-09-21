@@ -1,0 +1,38 @@
+.header {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto; /* alinhar sempre ao centro, mesmo que a tela aumente */
+    display: flex; /* ficar um do lado do outro */
+    justify-content: space-between; /*coloca um num canto e outro no outro*/
+    align-items: center;
+}
+
+.header-menu {
+    display: flex;
+    flex-wrap: wrap; /* responsividade: se diminuir mais que seu tamanho, começa a quebrar */
+    gap: 10px;
+    justify-content: center; /*vai justificando mesmo que for quebrando */
+}
+
+.header-menu a {
+    font-size: 1.125rem; /* 1rem = 16px*/
+    line-height: 1.3;
+    padding: 10px 30px; /* deixar uma área clicável maior - melhor para os dedos (mobile) */
+    text-decoration: none;
+    color: #141414;
+    display: inline-block;
+}
+
+/* trabalhar a responsividade - observar no inspecionar os tamanhos */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px;    
+    } /* define como coluna única abaixo dessa faixa de tamanho */
+
+    .header a {
+        background: #f5f5f5;
+        border-radius: 4px;
+    }
+}

@@ -1,0 +1,7 @@
+/* Importação de outro arquivo .css para aqui - não é o mais correto, mas no curso ele tá seguindo assim */
+@import './global.css';
+@import './header.css';
+@import 'introducao.css';
+@import 'experiencia.css';
+@import 'formacao.css';
+@import 'footer.css';

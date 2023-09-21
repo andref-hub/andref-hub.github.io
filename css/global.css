@@ -1,0 +1,40 @@
+/* CSS destinado à modificar coisas do body, resetar estilos e classes reutilizadas no site. Acho mais fácil usar o *, mas vamos seguir com o curso 
+-_(><)_- */
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+    color: #141414;
+}
+
+h1, h2, h3, p {
+    margin: 0px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto; /* ajustando pois colocamos um height fixo la no html, para fins de otimização. Dessa forma a razão da imagem é mantida */
+    display: block;
+}
+
+.subtitulo {
+    font-size: 8rem;
+    word-break: break-all;
+    line-height: 1;
+    text-transform: uppercase;
+    max-width: 4ch;
+}
+
+@media (max-width: 800px) {
+    .subtitulo {
+        font-size: 3rem;
+        text-transform: capitalize;
+        max-width: initial !important; /* sinaliza que este conteúdo é importante e não deve ser sobrescrito */
+        }
+    }
